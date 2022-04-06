@@ -1,0 +1,119 @@
+.home {
+  background-image: url(../../assets/home/background-home-mobile.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*TABLET STYLES*/
+  @media screen and (min-width: 620px) {
+    background-image: url(../../assets/home/background-home-tablet.jpg);
+  }
+
+  /*DESKTOP STYLES*/
+  @media screen and (min-width: 1200px) {
+    background-image: url(../../assets/home/background-home-desktop.jpg);
+  }
+}
+
+.home__container {
+  height: max-content;
+  margin: 0 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 81px;
+
+  /*DESKTOP STYLES*/
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    width: 1110px;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-end;
+  }
+}
+
+.home-intro {
+  font-family: var(--header-font);
+  color: var(--secondary-text);
+
+  /* TABLET STYLES*/
+  @media screen and (min-width: 620px) {
+    font-size: 20px;
+  }
+
+  /*DESKTOP STYLES*/
+  @media screen and (min-width: 1200px) {
+    font-size: 28px;
+  }
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.home-heading {
+  font-family: var(--primary-font);
+  color: white;
+  font-size: 80px;
+
+  /* TABLET STYLES*/
+  @media screen and (min-width: 620px) {
+    font-size: 150px;
+  }
+}
+
+.home-text {
+  font-family: var(--secondary-font);
+  color: var(--secondary-text);
+  font-size: 15px;
+  line-height: 25px;
+
+  /* TABLET STYLES*/
+  @media screen and (min-width: 620px) {
+    width: 444px;
+    line-height: 28px;
+  }
+
+  /*DESKTOP STYLES*/
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.home-button {
+  display: flex;
+  justify-content: center;
+}
+
+.explore {
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #0b0d17;
+  font-size: 20px;
+  font-family: var(--primary-font);
+
+  /* TABLET STYLES*/
+  @media screen and (min-width: 620px) {
+    width: 242px;
+    height: 242px;
+    line-height: 242px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+  }
+}
